@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<robot name="faraday_pm">
+	<link name="world"/>
+
+	<joint name="world_base" type="fixed">
+		<parent link="world" />
+        <child link="base_link" />
+    </joint>
+
+    <link name="base_link"/>
+
+    <joint name="joint1" type="prismatic">
+		<parent link="base_link" />
+        <child link="link_b1" />
+        <axis xyz="0 0 1" />
+	    <limit
+	      lower="37"
+	      upper="263"
+	      effort="120"
+	      velocity="4.0" />
+    </joint>
+
+    <link name="link_b1"/>
+
+    <joint name="joint2" type="prismatic">
+		<parent link="base_link" />
+        <child link="link_b2" />
+        <axis xyz="0 0 1" />
+	    <limit
+	      lower="37"
+	      upper="263"
+	      effort="120"
+	      velocity="4.0" />
+    </joint>
+
+    <link name="link_b2"/>
+
+    <joint name="joint3" type="prismatic">
+		<parent link="base_link" />
+        <child link="link_b3" />
+        <axis xyz="0 0 1" />
+	    <limit
+	      lower="37"
+	      upper="263"
+	      effort="120"
+	      velocity="4.0" />
+    </joint>
+
+    <link name="link_b3"/>
+
+    <joint name="joint4" type="prismatic">
+		<parent link="base_link" />
+        <child link="link_b4" />
+        <axis xyz="0 0 1" />
+	    <limit
+	      lower="37"
+	      upper="263"
+	      effort="120"
+	      velocity="4.0" />
+    </joint>
+
+    <link name="link_b4"/>
+
+    <joint name="joint5" type="prismatic">
+		<parent link="base_link" />
+        <child link="link_b5" />
+        <axis xyz="0 0 1" />
+	    <limit
+	      lower="37"
+	      upper="263"
+	      effort="120"
+	      velocity="4.0" />
+    </joint>
+
+    <link name="link_b5"/>
+
+    <joint name="joint6" type="prismatic">
+		<parent link="base_link" />
+        <child link="link_b6" />
+        <axis xyz="0 0 1" />
+	    <limit
+	      lower="37"
+	      upper="263"
+	      effort="120"
+	      velocity="4.0" />
+    </joint>
+
+    <link name="link_b6"/>
+
+    <joint name="joint7" type="prismatic">
+		<parent link="base_link" />
+        <child link="link_b7" />
+        <axis xyz="0 0 1" />
+	    <limit
+	      lower="37"
+	      upper="263"
+	      effort="120"
+	      velocity="4.0" />
+    </joint>
+
+    <link name="link_b7"/>
+
+</robot>
+
+
+
+

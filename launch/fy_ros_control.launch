@@ -1,0 +1,15 @@
+<launch>  
+
+	  <node name="fy_hardware_interface" pkg="faraday_controller" type="fy_hardware_interface" output="screen"/>
+	  
+	  <rosparam file="$(find faraday_controller)/config/faraday_controllers.yaml" command="load"/>
+
+	  <param name="robot_description" textfile="$(find faraday_controller)/config/faraday_pm.urdf" />
+
+	  <rosparam file="$(find faraday_controller)/config/joints_limits.yaml" command="load"/>
+
+	  <node name="fy_pm_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn fy_pm_controller joint_state_controller" respawn="false" output="screen"/>
+
+	   <!--<node name="fy_pm_controller_spawner" pkg="controller_manager" type="spawner"  args=" fy_pm_controller" respawn="false" output="screen"/> -->
+
+</launch>
